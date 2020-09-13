@@ -1,10 +1,10 @@
 import React from "react"
-
+import Layout from "../Components/Layout"
 const errorPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>THIS PAGE DOESN'T EXISTS</h1>
-    </div>
+    </Layout>
   )
 }
 

@@ -13,6 +13,9 @@ const Toolbar = () => {
         <li>
           <Link to="/news/">Noticias</Link>
         </li>
+        <li>
+          <Link to="/siteMetaData/">META</Link>
+        </li>
       </ul>
     </nav>
   )
