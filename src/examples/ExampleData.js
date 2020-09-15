@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import imgs from "../images/img-1.jpg"
 import Image from "gatsby-image"
 /*const queryQl = graphql`
   {
@@ -47,7 +46,7 @@ const queryImg = graphql`
 
 const ExampleData = () => {
   const dataImg = useStaticQuery(queryImg)
-
+  console.log(dataImg)
   /*const data = useStaticQuery(queryQl)
   
   */

@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../Components/Layout"
+import NewsPosts from "../examples/NewsPosts"
 const news = () => {
   return (
     <Layout>
-      <h1>This is news page</h1>
+      <NewsPosts />
     </Layout>
   )
 }
