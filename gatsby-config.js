@@ -13,5 +13,16 @@ module.exports = {
     data: ["item-1", "item-2"],
     person: { name: "Gatsby", age: 25 },
   },
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `iamgesHome`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
 }
