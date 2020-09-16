@@ -44,7 +44,7 @@ body {
   color: #fff;
   /*text-transform: uppercase;*/
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .heading-primary--main {
@@ -157,6 +157,12 @@ body {
 }
 
 /*Toolbar*/
+.logo img {
+  height: 4.5rem;
+  width: auto;
+  margin-top: 2rem;
+}
+
 .navigation-items {
   list-style: none;
   display: flex;
@@ -179,14 +185,14 @@ body {
 }
 
 .toolbar {
-  height: 4rem;
+  height: 5rem;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
   box-sizing: border-box;
   z-index: 90;

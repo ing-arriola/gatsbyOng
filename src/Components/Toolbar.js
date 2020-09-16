@@ -1,8 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import Logo from "../images/LogRJF.png"
 const Toolbar = () => {
   return (
     <nav className="toolbar">
+      <div className="logo">
+        <img className="toolbar-logo" src={Logo} alt="Red de JF" />
+      </div>
       <ul className="navigation-items">
         <li>
           <Link to="/">Inicio</Link>
@@ -14,10 +18,7 @@ const Toolbar = () => {
           <Link to="/news/">Noticias</Link>
         </li>
         <li>
-          <Link to="/siteMetaData/">Unete</Link>
-        </li>
-        <li>
-          <Link to="/siteMetaData/">Donaciones</Link>
+          <Link to="/siteMetaData/">Colabora</Link>
         </li>
         <li>
           <Link to="/siteMetaData/">Contactanos</Link>
