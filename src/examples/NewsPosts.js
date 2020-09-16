@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Image from "gatsby-image"
 const newsQuery = graphql`
   {
@@ -12,6 +12,9 @@ const newsQuery = graphql`
             ...GatsbyContentfulFluid
           }
         }
+        texto {
+          id
+        }
       }
     }
   }
@@ -19,7 +22,6 @@ const newsQuery = graphql`
 const NewsPosts = () => {
   const postsData = useStaticQuery(newsQuery)
   const posts = postsData.allContentfulNews.nodes
-  console.log(posts)
 
   return (
     <div>
@@ -27,6 +29,7 @@ const NewsPosts = () => {
         <article key={post.id}>
           <h2 key={post.id}>{post.titulo}</h2>
           <Image fluid={post.imagen.fluid} />
+          <Link to={`/news/${post.texto.id}`}>Leer mas</Link>
         </article>
       ))}
     </div>
