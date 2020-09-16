@@ -1,13 +1,22 @@
 import React from "react"
-import styles from "../styles/styles.css"
+import "../styles/styles.css"
 import Layout from "../Components/Layout"
 
 export default () => {
   return (
-    <div>
-      <Layout>
-        <h1 className="texto-rojo">HELLO</h1>
-      </Layout>
-    </div>
+    <Layout>
+      <div className="header">
+        <div className="header__text-box">
+          <h1 className="header__primary-text">
+            <span className="heading-primary--main">
+              Red de Jovenes para el futuro
+            </span>
+            <span className="heading-primary--sub">
+              Refuerzos escolares online
+            </span>
+          </h1>
+        </div>
+      </div>
+    </Layout>
   )
 }

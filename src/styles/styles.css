@@ -1,3 +1,83 @@
-.texto-rojo {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 5rem 3rem 3rem 3rem;
+}
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, #73767ace, #161817e0),
+    url(../images/frontPage.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 95% 100vh, 0 100%);
+  border: rgb(117, 117, 117) 0.5px solid;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /*The next line add a negative offset to get the text-box right 
+  in the middle of the screen*/
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__primary-text {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  display: block;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  background: linear-gradient(
+    to bottom,
+    rgba(204, 203, 203, 0.507) 0%,
+    rgba(56, 56, 56, 0.315) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1rem 8rem;
+
+  color: rgb(21, 21, 26);
+  text-decoration: none;
+  transition: background-size 0.2s;
+}
+
+.heading-primary--main:hover {
+  background-size: 0.4rem 0.4rem;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1.5rem;
+  animation: moveInRight 1s ease-in;
 }
