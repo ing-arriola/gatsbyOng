@@ -26,7 +26,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 95% 100vh, 0 100%);
+  clip-path: polygon(5% 0, 100% 0, 95% 100vh, 0 100%);
   border: rgb(117, 117, 117) 0.5px solid;
 }
 
@@ -63,7 +63,7 @@ body {
   );
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 1rem 8rem;
+  background-size: 1rem 6rem;
 
   color: rgb(21, 21, 26);
   text-decoration: none;
@@ -80,4 +80,48 @@ body {
   font-weight: 300;
   letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-in;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
