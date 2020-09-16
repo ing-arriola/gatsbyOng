@@ -21,7 +21,7 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, #73767ace, #161817e0),
+  background-image: linear-gradient(to right bottom, #4548555e, #454855b2),
     url(../images/frontPage.jpg);
   background-size: cover;
   background-position: top;
@@ -42,17 +42,17 @@ body {
 
 .header__primary-text {
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 
 .heading-primary--main {
   display: block;
-  color: #ffffff;
-  font-size: 4rem;
+  color: #fff;
+  font-size: 3.3rem;
   font-weight: 400;
-  letter-spacing: 1rem;
+  letter-spacing: 0.2rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -63,9 +63,8 @@ body {
   );
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 1rem 6rem;
+  background-size: 1rem 12rem;
 
-  color: rgb(21, 21, 26);
   text-decoration: none;
   transition: background-size 0.2s;
 }
@@ -78,7 +77,7 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
   animation: moveInRight 1s ease-in;
 }
 
@@ -124,4 +123,72 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.btn--white {
+  background: #fff;
+  color: rgb(56, 56, 56);
+}
+
+.btn--dark {
+  background: rgb(56, 56, 56);
+  color: #fff;
+}
+
+/*Toolbar*/
+.navigation-items {
+  list-style: none;
+  display: flex;
+}
+
+.navigation-items li a {
+  text-decoration: none;
+  color: #454855;
+  margin: 0 1.1rem;
+  font-size: 1.8rem;
+  padding: 1.1rem 1.6rem;
+  font-weight: 500;
+}
+
+.navigation-items li a:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.233);
+  color: #fff;
+}
+
+.toolbar {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  z-index: 90;
+  background: #fff;
 }

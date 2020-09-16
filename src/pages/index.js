@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/styles.css"
 import Layout from "../Components/Layout"
+import { Link } from "gatsby"
 
 export default () => {
   return (
@@ -12,9 +13,15 @@ export default () => {
               Red de Jovenes para el futuro
             </span>
             <span className="heading-primary--sub">
-              Refuerzos escolares online
+              Educacion con etica para todos
             </span>
           </h1>
+          <Link
+            to="/about/"
+            className="btn btn--white btn--animated-from-bottom"
+          >
+            ¡Conocenos!
+          </Link>
         </div>
       </div>
     </Layout>
