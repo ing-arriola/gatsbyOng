@@ -30,6 +30,11 @@ body {
   border: rgb(117, 117, 117) 0.5px solid;
 }
 
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -201,4 +206,65 @@ body {
 
 p {
   white-space: pre-wrap;
+}
+
+/* INFO CONTAINER */
+.info-container--ong-data {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: 30% 70%;
+  /*grid-template-columns: repeat(auto-fill, minmax(45rem, 3fr));*/
+
+  gap: 2rem;
+}
+
+.info-container--title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.ong-data--description {
+  display: grid;
+
+  align-content: center;
+  font-size: 1.6rem;
+}
+
+.ong-data--image {
+  display: flex;
+  justify-content: center;
+}
+
+.ong-data--image > div {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+}
+
+.description--valores {
+  display: grid;
+  line-height: 5rem;
+  font-weight: 700;
+  align-content: center;
+  font-size: 2.2rem;
+}
+
+@media (min-width: 1449px) {
+  .info-container--ong-data {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media (max-width: 1071px) {
+  .info-container--ong-data {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .info-container--ong-data {
+    grid-template-columns: 1fr;
+  }
+  .description--valores {
+    justify-content: center;
+  }
 }

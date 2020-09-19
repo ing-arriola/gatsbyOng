@@ -30,10 +30,24 @@ const OngInfo = () => {
         .slice(0)
         .reverse()
         .map(info => (
-          <article key={info.id}>
-            <Image fluid={info.imgInfo.fluid} />
-            <h2>{info.name}</h2>
-            <p>{info.description.description}</p>
+          <article key={info.id} className="info-container">
+            <div className="info-container--title">
+              <h2>{info.name}</h2>
+            </div>
+            <div className="info-container--ong-data">
+              <div className="ong-data--image">
+                <Image fluid={info.imgInfo.fluid} />
+              </div>
+              <div
+                className={
+                  info.name === "Valores"
+                    ? "description--valores"
+                    : "ong-data--description"
+                }
+              >
+                <p>{info.description.description}</p>
+              </div>
+            </div>
           </article>
         ))}
     </div>
