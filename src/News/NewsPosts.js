@@ -22,7 +22,7 @@ const newsQuery = graphql`
 const NewsPosts = () => {
   const postsData = useStaticQuery(newsQuery)
   const posts = postsData.allContentfulNews.nodes
-  console.log(posts)
+  console.log(posts[0].imagen.fluid)
   return (
     <div>
       {posts.map(post => (

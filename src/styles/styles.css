@@ -198,3 +198,7 @@ body {
   z-index: 90;
   background: #fff;
 }
+
+p {
+  white-space: pre-wrap;
+}

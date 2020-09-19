@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../Components/Layout"
-import NewsPosts from "../examples/NewsPosts"
+import NewsPosts from "../News/NewsPosts"
 const news = () => {
   return (
     <Layout>

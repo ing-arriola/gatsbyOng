@@ -1,12 +1,7 @@
 import React from "react"
-import ExampleData from "../examples/ExampleData"
+
 const siteMetaData = () => {
-  return (
-    <div className="texto-rojo">
-      Hello siteMetaData
-      <ExampleData />
-    </div>
-  )
+  return <div className="texto-rojo">Hello siteMetaData</div>
 }
 
 export default siteMetaData
