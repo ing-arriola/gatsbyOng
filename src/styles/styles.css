@@ -209,11 +209,73 @@ p {
 }
 
 /* INFO CONTAINER */
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  align-items: center;
+  margin: 1rem 0;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+  z-index: 1;
+}
+
+#Mision {
+  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+    url(../images/About/mision.jpg);
+  background-size: cover;
+}
+#Vision {
+  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+    url(../images/About/vision.jpg);
+  background-size: cover;
+}
+
+#Valores {
+  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+    url(../images/About/valores.jpg);
+  background-size: cover;
+}
+.description--valores {
+  font-size: 3rem;
+}
+
+#Politicas {
+  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+    url(../images/About/politicas.jpg);
+  background-size: cover;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.info-container--title {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.info-container--ong-data {
+  font-size: 1.3rem;
+}
+
+.ong-data--image > div {
+  height: 15rem;
+
+  width: 100%;
+}
+
+/*
 .info-container--ong-data {
   display: grid;
-  /*grid-template-columns: repeat(2, 1fr);*/
+
+  grid-template-columns: repeat(2, 1fr);
   grid-template-columns: 30% 70%;
-  /*grid-template-columns: repeat(auto-fill, minmax(45rem, 3fr));*/
+  grid-template-columns: repeat(auto-fill, minmax(45rem, 3fr));
 
   gap: 2rem;
 }
@@ -268,3 +330,4 @@ p {
     justify-content: center;
   }
 }
+*/
