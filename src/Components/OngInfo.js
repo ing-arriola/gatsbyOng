@@ -35,16 +35,9 @@ const OngInfo = () => {
 
   let prevText = sortedArray.filter(chunk => chunk.name === "Valores")
   let enteredText = prevText[0].description.description
-  console.log(sortedArray[0].imgInfo.fluid.src)
-  /*for (let j = 0; j < enteredText.length; j++) {
-      
-      
-  }*/
+  const valores = enteredText.split("\n")
+  console.log(valores)
 
-  console.log(enteredText)
-  console.log(enteredText.indexOf("\n"))
-  let numberOfLineBreaks = (enteredText.match(/\n/g) || []).length
-  console.log(numberOfLineBreaks)
   return (
     <div>
       {sortedArray.map(info => (
@@ -56,7 +49,11 @@ const OngInfo = () => {
           <div className="info-container--ong-data">
             <div className="ong-data--image"></div>
             <div className={"ong-data-" + info.name}>
-              <p>{info.description.description}</p>
+              {info.name === "Valores" ? (
+                valores.map((valor, index) => <span key={index}>{valor}</span>)
+              ) : (
+                <p>{info.description.description}</p>
+              )}
             </div>
           </div>
         </article>
