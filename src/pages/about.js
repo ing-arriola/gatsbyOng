@@ -7,10 +7,10 @@ const about = () => {
     <Layout>
       <div id="about-container">
         <div id="sections-navigation">
-          <button onClick={() => scrollTo("#Mision")}>MISION</button>
-          <button onClick={() => scrollTo("#Vision")}>VISION</button>
-          <button onClick={() => scrollTo("#Valores")}>VALORES</button>
-          <button onClick={() => scrollTo("#Politicas")}>POLITICAS</button>
+          <a onClick={() => scrollTo("#Mision")}>MISION</a>
+          <a onClick={() => scrollTo("#Vision")}>VISION</a>
+          <a onClick={() => scrollTo("#Valores")}>VALORES</a>
+          <a onClick={() => scrollTo("#Politicas")}>POLITICAS</a>
         </div>
         <div>
           <OngInfo />
