@@ -41,7 +41,13 @@ const OngInfo = () => {
   return (
     <div>
       {sortedArray.map(info => (
-        <article key={info.id} className="info-container" id={info.name}>
+        <article
+          key={info.id}
+          className={
+            info.name === "Politicas" ? "info-politicas" : "info-container"
+          }
+          id={info.name}
+        >
           <div className="info-container--title">
             <h2>{info.name}</h2>
           </div>
