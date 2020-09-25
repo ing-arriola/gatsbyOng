@@ -9,7 +9,15 @@ import Layout from "../Components/Layout"
 const newTemplate = ({ data }) => {
   const firstContent = data.contentfulNews
   const options = {
-    renderNode: {},
+    renderNode: {
+      [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,
+      [BLOCKS.HEADING_2]: (node, children) => <h2>{children}</h2>,
+      [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
+      [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
+        <img src={`https:${node.data.target.fields.file["en-US"].url}`}></img>
+      ),
+    },
     renderMark: {},
   }
   console.log(firstContent)
@@ -23,7 +31,8 @@ const newTemplate = ({ data }) => {
         <Link to="/news">Regresar a noticias</Link>
 
         {documentToReactComponents(
-          firstContent.childContentfulNewsTextoRichTextNode.json
+          firstContent.childContentfulNewsTextoRichTextNode.json,
+          options
         )}
       </div>
     </Layout>
