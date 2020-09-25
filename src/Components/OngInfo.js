@@ -33,10 +33,10 @@ const OngInfo = () => {
     sortedArray.push(sortedItem[0])
   }
 
+  /* Turning a paragraph into an array in order to add styles to each NGO's "Valor" */
   let prevText = sortedArray.filter(chunk => chunk.name === "Valores")
   let enteredText = prevText[0].description.description
   const valores = enteredText.split("\n")
-  console.log(valores)
 
   return (
     <div>

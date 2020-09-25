@@ -13,7 +13,7 @@ export default () => {
               Red de Jovenes del futuro
             </span>
             <span className="heading-primary--sub">
-              Educacion con etica para todos
+              Acciones que crean impacto
             </span>
           </h1>
           <Link
