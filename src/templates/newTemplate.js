@@ -1,11 +1,9 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Image from "gatsby-image"
-import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types"
+import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../Components/Layout"
 
-//const newTemplate = ({ data: { article } }) => {
 const newTemplate = ({ data }) => {
   const firstContent = data.contentfulNews
   const options = {
@@ -15,21 +13,21 @@ const newTemplate = ({ data }) => {
       [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
       [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
-        <img src={`https:${node.data.target.fields.file["en-US"].url}`}></img>
+        <div className="newsImages-container">
+          <img
+            className="newsImages"
+            src={`https:${node.data.target.fields.file["en-US"].url}`}
+          ></img>
+        </div>
       ),
     },
     renderMark: {},
   }
-  console.log(firstContent)
-  /*  article.texto.content.map(item => {
-    console.log(item.content[0].value.substring(1, 20))
-  })*/
 
   return (
     <Layout>
       <div>
         <Link to="/news">Regresar a noticias</Link>
-
         {documentToReactComponents(
           firstContent.childContentfulNewsTextoRichTextNode.json,
           options

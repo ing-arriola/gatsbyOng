@@ -16,6 +16,9 @@ const Toolbar = () => {
           <Link to="/about/">Nosotros</Link>
         </li>
         <li>
+          <Link to="/programs/">Programas</Link>
+        </li>
+        <li>
           <Link to="/news/">Noticias</Link>
         </li>
         <li>

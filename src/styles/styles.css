@@ -37,7 +37,7 @@ h1 {
 
 .header__text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   /*The next line add a negative offset to get the text-box right 
   in the middle of the screen*/
@@ -334,6 +334,34 @@ p {
 .ong-data-Valores > span:hover {
   background-color: rgba(56, 56, 56, 0.315);
   box-shadow: 0 0.5rem 0.8rem #ccc;
+}
+
+/* STyles for Image on a new */
+
+.newsImages {
+  width: 70vw;
+}
+
+.newsImages-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  gap: 1.5rem;
+  padding: 0px 3rem 3rem 3rem;
+}
+
+.post-card {
+  border: 1px solid #eee;
+  border-radius: 2rem;
+  box-shadow: 0 0.3rem 0.3rem #ccc;
+  /*padding: 1rem;
+  margin: 1rem;*/
 }
 
 /*
