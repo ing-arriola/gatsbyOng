@@ -29,7 +29,9 @@ const NewsPosts = () => {
         <article key={post.id} className="post-card">
           <h2 key={post.id}>{post.titulo}</h2>
           <Image fluid={post.imagen.fluid} />
-          <Link to={`/news/${post.texto.id}`}>Leer mas</Link>
+          <div>
+            <Link to={`/news/${post.texto.id}`}>Leer mas</Link>
+          </div>
         </article>
       ))}
     </div>
