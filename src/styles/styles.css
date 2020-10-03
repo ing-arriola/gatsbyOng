@@ -5,13 +5,16 @@
 }
 
 /*@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700;800&display=swap");
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  /*font-family: "Playfair Display", serif;*/
+  font-family: "Bitter", serif;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -55,7 +58,7 @@ h1 {
 .heading-primary--main {
   display: block;
   color: #fff;
-  font-size: 3.3rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
   animation-name: moveInLeft;
@@ -80,7 +83,7 @@ h1 {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: 1rem;
   animation: moveInRight 1s ease-in;
@@ -256,18 +259,18 @@ p {
 }
 
 #Mision {
-  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/mision.jpg);
   background-size: cover;
 }
 #Vision {
-  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/vision.jpg);
   background-size: cover;
 }
 
 #Valores {
-  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/valores.jpg);
   background-size: cover;
 }
@@ -276,7 +279,7 @@ p {
 }
 
 #Politicas {
-  background-image: linear-gradient(to right bottom, #2021255e, #1f2025b2),
+  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/politicas.jpg);
   background-size: cover;
   display: flex;
@@ -296,12 +299,19 @@ p {
 
 .info-container--title {
   font-size: 3rem;
-  line-height: 1.2;
+  line-height: 1.6;
   margin: 1rem;
 }
+
+.info-container--ong-data {
+  line-height: 1.6;
+}
+
 .ong-data-Mision,
-.ong-data-Vision {
-  font-size: 2rem;
+.ong-data-Vision,
+.ong-data-Politicas {
+  text-align: justify;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -315,9 +325,6 @@ p {
 }
 
 .ong-data-Politicas {
-  font-weight: 500;
-  text-align: left;
-  font-size: 2rem;
   height: 20rem;
 }
 

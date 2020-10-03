@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Image from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
+import { MdSentimentSatisfied } from "react-icons/md"
 const infoQuery = graphql`
   {
     allContentfulRdf {
@@ -22,8 +23,7 @@ const infoQuery = graphql`
 `
 const OngInfo = () => {
   const data = useStaticQuery(infoQuery)
-  console.log(data.allContentfulRdf)
-  console.log(data.allContentfulRdf.nodes[0].imgInfo.fluid)
+
   const orderToRender = ["Mision", "Vision", "Valores", "Politicas"]
   const sortedArray = []
   for (let i = 0; i < orderToRender.length; i++) {
@@ -54,6 +54,7 @@ const OngInfo = () => {
 
           <div className="info-container--ong-data">
             <div className="ong-data--image"></div>
+
             <div
               data-sal="fade"
               data-sal-duration="800"

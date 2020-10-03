@@ -1,7 +1,11 @@
 import React from "react"
+import Program from "../Components/Program"
 
-const programs = () => {
-  return <div>HOLA DESDE PROGRAMAS</div>
+const Programs = () => {
+  return (
+    <div>
+      <Program />
+    </div>
+  )
 }
-
-export default programs
+export default Programs
