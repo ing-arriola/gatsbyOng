@@ -1,11 +1,12 @@
 import React from "react"
+import Layout from "../Components/Layout"
 import Program from "../Components/Program"
 
 const Programs = () => {
   return (
-    <div>
+    <Layout>
       <Program />
-    </div>
+    </Layout>
   )
 }
 export default Programs
