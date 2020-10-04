@@ -25,18 +25,21 @@ const Program = () => {
   const data = useStaticQuery(programsQuery)
   console.log(data.allContentfulPrograms.nodes[0].nombre)
   return (
-    <div className="posts-container">
-      {data.allContentfulPrograms.nodes.map(programa => (
-        <section key={programa.id} className="post-card">
-          <div className="post-card__title">
-            <h2>{programa.nombre}</h2>
-          </div>
-          <Image fluid={programa.imagen.fluid} />
-          <div className="post-card__read-more">
-            <Link to={`/programs/${programa.descripcion.id}`}>Leer mas</Link>
-          </div>
-        </section>
-      ))}
+    <div>
+      <h1>CONOCE NUESTROS PROGRAMAS DE AYUDA</h1>
+      <div className="posts-container">
+        {data.allContentfulPrograms.nodes.map(programa => (
+          <section key={programa.id} className="post-card">
+            <div className="post-card__title">
+              <h2>{programa.nombre}</h2>
+            </div>
+            <Image fluid={programa.imagen.fluid} />
+            <div className="post-card__read-more">
+              <Link to={`/programs/${programa.descripcion.id}`}>Leer mas</Link>
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   )
 }
