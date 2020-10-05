@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
-
+/*
 const programsQuery = graphql`
   {
     allContentfulPrograms {
@@ -20,14 +20,22 @@ const programsQuery = graphql`
     }
   }
 `
-
+*/
 const Program = () => {
-  const data = useStaticQuery(programsQuery)
-  console.log(data.allContentfulPrograms.nodes[0].nombre)
+  /*  const data = useStaticQuery(programsQuery)
+  console.log(data.allContentfulPrograms.nodes[0].nombre)*/
   return (
     <div>
       <h1>CONOCE NUESTROS PROGRAMAS DE AYUDA</h1>
-      <div className="posts-container">
+    </div>
+  )
+}
+
+export default Program
+
+/*
+
+<div className="posts-container">
         {data.allContentfulPrograms.nodes.map(programa => (
           <section key={programa.id} className="post-card">
             <div className="post-card__title">
@@ -40,8 +48,4 @@ const Program = () => {
           </section>
         ))}
       </div>
-    </div>
-  )
-}
-
-export default Program
+*/

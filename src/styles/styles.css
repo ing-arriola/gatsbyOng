@@ -402,8 +402,14 @@ p {
 }
 
 .post-card:hover .post-card__read-more {
-  background: #c95932;
+  background: #221f1e;
   /*background: #736a9a;*/
+}
+
+.long-info {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 /*

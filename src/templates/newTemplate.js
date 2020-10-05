@@ -6,6 +6,7 @@ import Layout from "../Components/Layout"
 
 const newTemplate = ({ data }) => {
   const firstContent = data.contentfulNews
+  console.log(firstContent)
   const options = {
     renderNode: {
       [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,
