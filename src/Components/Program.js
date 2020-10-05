@@ -33,7 +33,12 @@ const Program = () => {
             <div className="post-card__title">
               <h2>{programa.titulo}</h2>
             </div>
-            <Image fluid={programa.imagen.fluid} />
+            <div>
+              <Image
+                className="post-card__image"
+                fluid={programa.imagen.fluid}
+              />
+            </div>
             <div className="post-card__read-more">
               <Link to={`/programs/${programa.texto.id}`}>Leer mas</Link>
             </div>
