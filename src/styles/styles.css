@@ -406,10 +406,9 @@ p {
   /*background: #736a9a;*/
 }
 
-.long-info {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+.article-text {
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 /*
