@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import Image from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
-import { MdSentimentSatisfied } from "react-icons/md"
+
 const infoQuery = graphql`
   {
     allContentfulRdf {

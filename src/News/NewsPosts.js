@@ -8,7 +8,7 @@ const newsQuery = graphql`
         id
         titulo
         imagen {
-          fluid {
+          fluid(maxWidth: 400) {
             ...GatsbyContentfulFluid
           }
         }
@@ -27,9 +27,11 @@ const NewsPosts = () => {
     <div className="posts-container">
       {posts.map(post => (
         <article key={post.id} className="post-card">
-          <h2 key={post.id}>{post.titulo}</h2>
-          <Image fluid={post.imagen.fluid} />
-          <div>
+          <div className="post-card__title">
+            <h2 key={post.id}>{post.titulo}</h2>
+          </div>
+          <Image className="post-card__image" fluid={post.imagen.fluid} />
+          <div className="post-card__read-more">
             <Link to={`/news/${post.texto.id}`}>Leer mas</Link>
           </div>
         </article>

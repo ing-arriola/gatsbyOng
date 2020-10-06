@@ -53,9 +53,5 @@ export const programQuery = graphql`
     }
   }
 `
+
 export default programTemplate
-
-/*
-
-
-*/
