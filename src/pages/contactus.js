@@ -3,15 +3,16 @@ import Layout from "../Components/Layout"
 const contactus = () => {
   return (
     <Layout>
-      <div>
-        <form>
-          <label>Nombre</label>
+      <div className="form-container">
+        <form className="contact-form">
+          <h1>Contactanos</h1>
+          <label>NOMBRE</label>
           <input type="text" name="name" id="name" required></input>
-          <label>Email</label>
+          <label>EMAIL</label>
           <input type="email" name="email" id="email" required />
-          <label>Asunto</label>
+          <label>ASUNTO</label>
           <input type="text" name="subject" id="subject" required />
-          <label>Mensaje</label>
+          <label>MENSAJE</label>
           <textarea
             name="message"
             id=""

@@ -19,7 +19,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: rgb(41, 41, 41);
-  padding: 5rem 3rem 3rem 3rem;
 }
 
 .header {
@@ -271,17 +270,20 @@ p {
   background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/mision.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 #Vision {
   background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/vision.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #Valores {
   background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/valores.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 .description--valores {
   font-size: 3rem;
@@ -290,7 +292,9 @@ p {
 #Politicas {
   background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
     url(../images/About/politicas.jpg);
+
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   height: 150vh;
@@ -440,6 +444,47 @@ p {
 
 .article-text > h2 {
   margin-top: 4rem;
+}
+
+/*CONTACT FORM*/
+
+.form-container {
+  margin-top: 5rem;
+  height: 100vh;
+  width: 98vw;
+  margin: 5 auto auto 0;
+  font-size: 2rem;
+}
+
+.contact-form {
+  background-image: linear-gradient(to right bottom, #4548557a, #454855c7),
+    url(../images/contact.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.contact-form > input,
+label,
+textarea,
+button {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact-form input,
+label {
+  font-weight: 500;
+  line-height: 2;
+}
+
+.contact-form input {
+  margin-bottom: 1rem;
 }
 
 /*
