@@ -10,27 +10,27 @@ const Toolbar = () => {
       </div>
       <ul className="navigation-items">
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/">INICIO</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/about/">Nosotros</Link>
+          <Link to="/about/">NOSOTROS</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/programs/">Programas</Link>
+          <Link to="/programs/">PROGRAMAS</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/news/">Noticias</Link>
+          <Link to="/news/">NOTICIAS</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/helpus/">Colabora</Link>
+          <Link to="/helpus/">COLABORA</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/contactus/">Contactanos</Link>
+          <Link to="/contactus/">CONTACTANOS</Link>
           <div className="underline"></div>
         </li>
       </ul>

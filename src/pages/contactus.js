@@ -5,7 +5,9 @@ const contactus = () => {
     <Layout>
       <div className="form-container">
         <form className="contact-form">
-          <h1>Contactanos</h1>
+          <div className="page-title">
+            <p>CONTACTANOS</p>
+          </div>
           <label>NOMBRE</label>
           <input type="text" name="name" id="name" required></input>
           <label>EMAIL</label>

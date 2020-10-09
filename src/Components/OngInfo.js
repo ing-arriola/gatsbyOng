@@ -47,7 +47,7 @@ const OngInfo = () => {
           id={info.name}
         >
           <div className="info-container--title">
-            <h2>{info.name}</h2>
+            <p>{info.name}</p>
           </div>
 
           <div className="info-container--ong-data">

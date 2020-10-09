@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");*/
-/*@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");*/
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700;800&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700;800&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  /*font-family: "Playfair Display", serif;*/
-  font-family: "Bitter", serif;
+  font-family: "Lora", serif;
+  /*font-family: "Bitter", serif;
+  font-family: "Piazzolla", serif;*/
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -311,9 +313,10 @@ p {
 }
 
 .info-container--title {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.6;
   margin: 1rem;
+  text-transform: uppercase;
 }
 
 .info-container--ong-data {
@@ -358,6 +361,10 @@ p {
 
 /* STyles for Image on a new */
 
+.news-container {
+  margin: 6rem 0;
+}
+
 .newsImages {
   width: 70vw;
 }
@@ -370,12 +377,17 @@ p {
 }
 
 .posts-container {
-  margin: 3rem;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
   gap: 1.5rem;
   padding: 0px 3rem 3rem 3rem;
   transition: all 0.5s ease-in-out;
+}
+
+.page-title {
+  font-size: 4rem;
+  text-align: center;
 }
 
 .post-card {
@@ -446,6 +458,11 @@ p {
   margin-top: 4rem;
 }
 
+/*PROGRAM*/
+.progrmas-container {
+  margin-top: 6rem;
+}
+
 /*CONTACT FORM*/
 
 .form-container {
@@ -457,7 +474,7 @@ p {
 }
 
 .contact-form {
-  background-image: linear-gradient(to right bottom, #4548557a, #454855c7),
+  background-image: linear-gradient(to right bottom, #454855b4, #454855e5),
     url(../images/contact.jpg);
   background-size: cover;
   background-position: top;
@@ -474,12 +491,12 @@ label,
 textarea,
 button {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
 }
 
 .contact-form input,
 label {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
 }
 

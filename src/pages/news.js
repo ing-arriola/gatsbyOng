@@ -4,7 +4,13 @@ import NewsPosts from "../News/NewsPosts"
 const news = () => {
   return (
     <Layout>
-      <NewsPosts />
+      <div className="news-container">
+        <div className="page-title">
+          <p>ACCIONES CON IMPACTO POSITIVO</p>
+        </div>
+
+        <NewsPosts />
+      </div>
     </Layout>
   )
 }

@@ -25,8 +25,11 @@ const Program = () => {
   const data = useStaticQuery(programsQuery)
   console.log(data.allContentfulOngPrograms.nodes[0].titulo)
   return (
-    <div>
-      <h1>CONOCE NUESTROS PROGRAMAS DE AYUDA</h1>
+    <div className="progrmas-container">
+      <div className="page-title">
+        <p>NUESTROS PROGRAMAS DE AYUDA</p>
+      </div>
+
       <div className="posts-container">
         {data.allContentfulOngPrograms.nodes.map(programa => (
           <section key={programa.id} className="post-card">

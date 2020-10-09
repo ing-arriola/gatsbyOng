@@ -10,7 +10,7 @@ export default () => {
         <div className="header__text-box">
           <h1 className="header__primary-text">
             <span className="heading-primary--main">
-              Red de Jovenes del futuro
+              RED DE JOVENES DEL FUTURO
             </span>
             <span className="heading-primary--sub">
               Acciones que crean impacto
