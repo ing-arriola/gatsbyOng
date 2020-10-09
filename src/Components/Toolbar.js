@@ -11,21 +11,27 @@ const Toolbar = () => {
       <ul className="navigation-items">
         <li>
           <Link to="/">Inicio</Link>
+          <div className="underline"></div>
         </li>
         <li>
           <Link to="/about/">Nosotros</Link>
+          <div className="underline"></div>
         </li>
         <li>
           <Link to="/programs/">Programas</Link>
+          <div className="underline"></div>
         </li>
         <li>
           <Link to="/news/">Noticias</Link>
+          <div className="underline"></div>
         </li>
         <li>
           <Link to="/siteMetaData/">Colabora</Link>
+          <div className="underline"></div>
         </li>
         <li>
           <Link to="/siteMetaData/">Contactanos</Link>
+          <div className="underline"></div>
         </li>
       </ul>
     </nav>

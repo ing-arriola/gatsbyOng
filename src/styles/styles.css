@@ -178,22 +178,31 @@ h1 {
 
 .navigation-items li a {
   text-decoration: none;
-  color: rgb(41, 41, 41);
+  color: #000;
   margin: 0 1.1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1.1rem 1.6rem;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
-.navigation-items li a:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.233);
-  color: #fff;
+.underline {
+  content: "";
+  transition: all 0.3s;
+  width: 0;
+  height: 0.2rem;
+  margin: 0 3rem;
+  background: #000;
+}
+
+.navigation-items li:hover .underline {
+  width: 90%;
+  height: 0.2rem;
+  margin: 0 0.5rem;
 }
 
 .toolbar {
-  height: 5rem;
+  height: 6rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -215,7 +224,7 @@ p {
 
 #sections-navigation {
   left: 0;
-  top: 5rem;
+  top: 6rem;
   height: 4rem;
   background-color: #fff;
   width: 100%;
@@ -369,7 +378,7 @@ p {
   border: 1px solid #eee;
   border-radius: 2rem;
   box-shadow: 1rem 1.3rem 0.8rem rgb(161, 161, 161);
-  height: 31rem;
+  height: 26.3rem;
   position: relative;
 }
 
@@ -379,7 +388,9 @@ p {
 }
 
 .post-card__image {
-  height: 20rem;
+  height: 19.95rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .post-card__read-more {
