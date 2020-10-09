@@ -24,7 +24,7 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, #4548555e, #454855b2),
+  background-image: linear-gradient(to right bottom, #4548557a, #454855c7),
     url(../images/frontPage.jpg);
   background-size: cover;
   background-position: top;

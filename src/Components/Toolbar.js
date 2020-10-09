@@ -26,11 +26,11 @@ const Toolbar = () => {
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/siteMetaData/">Colabora</Link>
+          <Link to="/helpus/">Colabora</Link>
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/siteMetaData/">Contactanos</Link>
+          <Link to="/contactus/">Contactanos</Link>
           <div className="underline"></div>
         </li>
       </ul>
