@@ -221,6 +221,10 @@ h1 {
   background: transparent;
 }
 
+.active {
+  background: linear-gradient(to right bottom, #343e52, #7384a1);
+}
+
 p {
   white-space: pre-wrap;
 }
@@ -269,7 +273,6 @@ p {
   height: 100vh;
   color: #fff;
 
-  margin: 1rem 0;
   justify-content: center;
   text-align: center;
   padding: 0 10rem;
@@ -392,7 +395,7 @@ p {
   margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
-  gap: 5rem;
+  gap: 8rem;
   padding: 0px 3rem 3rem 3rem;
   transition: all 0.5s ease-in-out;
 }
@@ -409,7 +412,7 @@ p {
   box-shadow: 0.8rem 0.8rem 0.8rem rgba(161, 161, 161, 0.877);
   height: 26.3rem;
   position: relative;
-  background: rgba(255, 255, 255, 0.952);
+  background: rgba(255, 255, 255, 0.925);
   overflow: hidden;
 }
 
@@ -514,6 +517,11 @@ p {
   flex-direction: column;
   padding: 5rem 1rem;
   border-radius: 0.5rem;
+}
+
+.contact-description {
+  padding: 0 5rem;
+  text-align: center;
 }
 
 .contact-form > input,

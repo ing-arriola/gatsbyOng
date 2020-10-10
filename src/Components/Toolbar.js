@@ -1,10 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Logo from "../images/LogRJF.png"
 import scrollTo from "gatsby-plugin-smoothscroll"
 const Toolbar = () => {
+  const [navBackground, setNavBackground] = useState(false)
+
+  const changeNavbarBackground = () => {
+    if (window.scrollY >= 10) {
+      setNavBackground(true)
+    } else {
+      setNavBackground(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeNavbarBackground)
   return (
-    <nav className="toolbar">
+    <nav className={navBackground === true ? "toolbar active " : "toolbar"}>
       <div className="logo">
         <img className="toolbar-logo" src={Logo} alt="Red de JF" />
       </div>
