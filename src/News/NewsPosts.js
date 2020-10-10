@@ -28,7 +28,7 @@ const NewsPosts = () => {
       {posts.map(post => (
         <article key={post.id} className="post-card">
           <div className="post-card__title">
-            <h2 key={post.id}>{post.titulo}</h2>
+            <p key={post.id}>{post.titulo}</p>
           </div>
           <Image className="post-card__image" fluid={post.imagen.fluid} />
           <div className="post-card__read-more">

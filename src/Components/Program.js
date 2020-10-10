@@ -34,7 +34,7 @@ const Program = () => {
         {data.allContentfulOngPrograms.nodes.map(programa => (
           <section key={programa.id} className="post-card">
             <div className="post-card__title">
-              <h2>{programa.titulo}</h2>
+              <p>{programa.titulo}</p>
             </div>
             <div>
               <Image

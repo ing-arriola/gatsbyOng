@@ -369,7 +369,12 @@ p {
 /* STyles for Image on a new */
 
 .news-container {
-  margin: 6rem 0;
+  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
+    url(../images/news.jpg);
+
+  background-size: cover;
+  padding: 5rem 0;
+  background-attachment: fixed;
 }
 
 .newsImages {
@@ -387,12 +392,13 @@ p {
   margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
-  gap: 1.5rem;
+  gap: 5rem;
   padding: 0px 3rem 3rem 3rem;
   transition: all 0.5s ease-in-out;
 }
 
 .page-title {
+  color: #fff;
   font-size: 4rem;
   text-align: center;
 }
@@ -400,18 +406,24 @@ p {
 .post-card {
   border: 1px solid #eee;
   border-radius: 2rem;
-  box-shadow: 1rem 1.3rem 0.8rem rgb(161, 161, 161);
+  box-shadow: 0.8rem 0.8rem 0.8rem rgba(161, 161, 161, 0.877);
   height: 26.3rem;
   position: relative;
+  background: rgba(255, 255, 255, 0.952);
+  overflow: hidden;
 }
 
 .post-card__title {
   text-align: center;
+  font-size: 2.1rem;
   padding: 1rem;
+  font-weight: 300;
 }
 
 .post-card__image {
-  height: 19.95rem;
+  /*height: 19.95rem;*/
+  height: 100%;
+
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
@@ -467,7 +479,13 @@ p {
 
 /*PROGRAM*/
 .progrmas-container {
-  margin-top: 6rem;
+  background-image: linear-gradient(to right bottom, #4548557a, #454855c7),
+    url(../images/programs.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 5rem 1rem;
 }
 
 /*CONTACT FORM*/
