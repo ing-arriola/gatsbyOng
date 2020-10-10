@@ -6,15 +6,7 @@ const about = () => {
   return (
     <Layout>
       <div id="about-container">
-        <div id="sections-navigation">
-          <a onClick={() => scrollTo("#Mision")}>MISION</a>
-          <a onClick={() => scrollTo("#Vision")}>VISION</a>
-          <a onClick={() => scrollTo("#Valores")}>VALORES</a>
-          <a onClick={() => scrollTo("#Politicas")}>POLITICAS</a>
-        </div>
-        <div>
-          <OngInfo />
-        </div>
+        <OngInfo />
       </div>
     </Layout>
   )

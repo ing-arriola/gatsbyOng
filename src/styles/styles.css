@@ -174,7 +174,8 @@ h1 {
   margin-top: 2rem;
 }
 
-.navigation-items {
+.navigation-items,
+.black-item {
   list-style: none;
   display: flex;
 }
@@ -189,6 +190,22 @@ h1 {
   transition: all 0.3s;
 }
 
+.black-item li a {
+  text-decoration: none;
+  color: #343e52;
+  margin: 0 1.1rem;
+  font-size: 1.5rem;
+  padding: 1.1rem 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.black-item li:hover .underline-black {
+  width: 90%;
+  height: 0.2rem;
+  margin: 0 0.5rem;
+}
+
 .underline {
   content: "";
   transition: all 0.3s;
@@ -196,6 +213,15 @@ h1 {
   height: 0.2rem;
   margin: 0 3rem;
   background: #fff;
+}
+
+.underline-black {
+  content: "";
+  transition: all 0.3s;
+  width: 0;
+  height: 0.2rem;
+  margin: 0 3rem;
+  background: #343e52;
 }
 
 .navigation-items li:hover .underline {
@@ -221,8 +247,33 @@ h1 {
   background: transparent;
 }
 
+.toolbar_posts {
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  z-index: 20000;
+  /*background: #677693c2;*/
+  /*background: #343e52d7;*/
+  background: #fff;
+}
+
 .active {
   background: linear-gradient(to right bottom, #343e52, #7384a1);
+}
+
+.active-black {
+  background: linear-gradient(to right bottom, #343e52, #7384a1);
+}
+
+.active-black-item li a {
+  color: #fff;
 }
 
 p {
@@ -539,6 +590,21 @@ label {
 
 .contact-form input {
   margin-bottom: 1rem;
+}
+
+.form-button {
+  margin-top: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  background: #37af65;
+  font-size: 2rem;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.post-container {
+  margin-top: 2.5rem;
 }
 
 /*

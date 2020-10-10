@@ -26,8 +26,8 @@ const newTemplate = ({ data }) => {
   }
 
   return (
-    <Layout>
-      <div>
+    <Layout color="black">
+      <div className="post-container">
         <Link to="/news">Regresar a noticias</Link>
         {documentToReactComponents(
           firstContent.childContentfulNewsTextoRichTextNode.json,

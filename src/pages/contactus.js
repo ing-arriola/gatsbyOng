@@ -45,7 +45,7 @@ const contactus = () => {
             rows="10"
             required
           ></textarea>
-          <button>Enviar</button>
+          <button className="form-button">Enviar</button>
         </form>
       </div>
     </Layout>
