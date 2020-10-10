@@ -30,7 +30,7 @@ const Toolbar = () => {
           <div className="underline"></div>
         </li>
         <li>
-          <Link to="/contactus/">CONTACTANOS</Link>
+          <Link to="/contactus/">CONTACTO</Link>
           <div className="underline"></div>
         </li>
       </ul>
