@@ -363,8 +363,6 @@ p {
   height: 150vh;
   color: #fff;
 
-  margin: 1rem 0;
-
   text-align: center;
   padding: 12rem 10rem;
 }
@@ -382,6 +380,10 @@ p {
 
 .info-container--ong-data {
   line-height: 1.6;
+}
+
+.info-container--description {
+  font-weight: 300;
 }
 
 .ong-data-Mision,
@@ -460,7 +462,7 @@ p {
 .post-card {
   border: 1px solid #eee;
   border-radius: 2rem;
-  box-shadow: 0.8rem 0.8rem 0.8rem rgba(161, 161, 161, 0.877);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(161, 161, 161, 0.877);
   height: 26.3rem;
   position: relative;
   background: rgba(255, 255, 255, 0.925);
@@ -524,11 +526,11 @@ p {
 }
 
 .article-text > p {
-  margin-top: 3rem;
+  margin: 3rem;
 }
 
 .article-text > h2 {
-  margin-top: 4rem;
+  margin: 4rem 3rem 0 3rem;
 }
 
 /*PROGRAM*/

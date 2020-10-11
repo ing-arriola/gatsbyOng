@@ -10,7 +10,8 @@ const contactus = () => {
           </div>
           <p className="contact-description">
             Sera un gusto atenderte, permitenos saber de ti escribiendonos a{" "}
-            <span>correo@institucion</span> o llenando el siguiente formulario:{" "}
+            <span>prensa.redejovenesdelfuturo@gmail.com</span> o llenando el
+            siguiente formulario:{" "}
           </p>
           <label>Nombre</label>
           <input

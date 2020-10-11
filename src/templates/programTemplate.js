@@ -28,8 +28,8 @@ const programTemplate = ({ data }) => {
   }
   return (
     <div>
-      <Layout>
-        <div>
+      <Layout color="black">
+        <div className="post-container">
           <Link to="/programs">Regresar a programas</Link>
           <div className="article-text">
             {documentToReactComponents(

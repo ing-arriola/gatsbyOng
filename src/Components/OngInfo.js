@@ -63,7 +63,9 @@ const OngInfo = () => {
               {info.name === "Valores" ? (
                 valores.map((valor, index) => <span key={index}>{valor}</span>)
               ) : (
-                <p>{info.description.description}</p>
+                <p className="info-container--description">
+                  {info.description.description}
+                </p>
               )}
             </div>
           </div>
