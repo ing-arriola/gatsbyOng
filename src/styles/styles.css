@@ -544,6 +544,36 @@ p {
   padding: 5rem 1rem;
 }
 
+/*HELP US*/
+
+.helpContainer {
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  margin: 0 auto auto 0;
+  font-size: 2rem;
+  background-image: linear-gradient(to right bottom, #454855b4, #454855e5),
+    url(../images/helpus.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.helpContainer__title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.helpContainer__subtitle {
+  text-align: center;
+  padding: 0 10rem;
+}
+
+.help-section {
+  text-align: center;
+}
+
 /*CONTACT FORM*/
 
 .form-container {

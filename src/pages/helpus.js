@@ -22,20 +22,18 @@ const helpus = () => {
   return (
     <Layout>
       <div className="helpContainer">
-        <h1>Ayudanos a ayudar</h1>
-        <p>
-          Constantemente nos encontramos pensando en planes de accion para
-          beneficiar a quinenes lo necesitan.
+        <p className="helpContainer__title">ILUMINA CON TU AYUDA A OTROS</p>
+        <p className="helpContainer__subtitle">
+          Tu tambien puede ayudar hoy mismo de las siguientes maneras:
         </p>
         <div>
           {helpWays.map(helpWay => (
             <section className="help-section">
               <div className="help-section--title">
+                {helpWay.name}
                 <div style={{ fontSize: helpWay.size }}>
                   {React.createElement(FontAwesome[helpWay.icon])}
                 </div>
-
-                {helpWay.name + helpWay.size}
               </div>
               <div className="help-section--description">
                 {helpWay.description}
