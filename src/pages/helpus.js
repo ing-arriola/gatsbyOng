@@ -13,6 +13,8 @@ export const helpQuery = graphql`
         childContentfulHelpDescriptionRichTextNode {
           json
         }
+        icon
+        id
       }
     }
   }
@@ -20,9 +22,9 @@ export const helpQuery = graphql`
 
 const Helpus = () => {
   const data = useStaticQuery(helpQuery)
-
+  //console.log(data)
   data.allContentfulHelp.nodes.map(help => {
-    console.log(help.childContentfulHelpDescriptionRichTextNode.json)
+    console.log(help.icon)
   })
 
   const helpContent = data.allContentfulHelp.nodes
@@ -30,7 +32,9 @@ const Helpus = () => {
   const options = {
     renderNode: {
       [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,
-      [BLOCKS.HEADING_2]: (node, children) => <h2>{children}</h2>,
+      [BLOCKS.HEADING_2]: (node, children) => (
+        <h2 className="helpway-title">{children}</h2>
+      ),
       [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
       [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
       [INLINES.HYPERLINK]: node => {
@@ -38,13 +42,18 @@ const Helpus = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/E6hQ6ek5hGE"
-            frameborder="0"
+            src={node.data.uri}
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         )
       },
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
+        <div className="newsImages-container">
+          <img src={`https:${node.data.target.fields.file["en-US"].url}`}></img>
+        </div>
+      ),
     },
     renderMark: {},
   }
@@ -73,15 +82,18 @@ const Helpus = () => {
         <p className="helpContainer__subtitle">
           Tu tambien puede ayudar hoy mismo de las siguientes maneras:
         </p>
-        <div>
-          {helpContent.map(help =>
-            documentToReactComponents(
-              help.childContentfulHelpDescriptionRichTextNode.json,
-              options
-            )
-          )}
+        <div className="helpway-content">
+          {helpContent.map(help => (
+            <div>
+              <div>
+                {documentToReactComponents(
+                  help.childContentfulHelpDescriptionRichTextNode.json,
+                  options
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-        <div></div>
       </div>
     </Layout>
   )

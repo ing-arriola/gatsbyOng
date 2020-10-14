@@ -548,7 +548,7 @@ p {
 
 .helpContainer {
   padding-top: 5rem;
-  height: 100vh;
+
   width: 100vw;
   color: #fff;
   margin: 0 auto auto 0;
@@ -573,6 +573,20 @@ p {
 .help-section--title {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.helpway-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.helpway-content {
+  font-weight: 200;
+}
+
+.helpway-content > p > iframe {
+  margin-top: 2rem;
 }
 
 .help-section {
