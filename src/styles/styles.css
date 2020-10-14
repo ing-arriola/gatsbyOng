@@ -570,6 +570,11 @@ p {
   padding: 0 10rem;
 }
 
+.help-section--title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .help-section {
   text-align: center;
 }

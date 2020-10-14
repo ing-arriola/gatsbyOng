@@ -1,12 +1,46 @@
 import React from "react"
+import { graphql, Link, useStaticQuery } from "gatsby"
+import { BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../Components/Layout"
 import * as FontAwesome from "react-icons/fa"
-const helpus = () => {
+
+export const helpQuery = graphql`
+  {
+    allContentfulHelp {
+      nodes {
+        childContentfulHelpDescriptionRichTextNode {
+          json
+        }
+      }
+    }
+  }
+`
+
+const Helpus = () => {
+  const data = useStaticQuery(helpQuery)
+
+  data.allContentfulHelp.nodes.map(help => {
+    console.log(help.childContentfulHelpDescriptionRichTextNode.json)
+  })
+
+  const helpContent = data.allContentfulHelp.nodes
+
+  const options = {
+    renderNode: {
+      [BLOCKS.HEADING_1]: (node, children) => <h1>{children}</h1>,
+      [BLOCKS.HEADING_2]: (node, children) => <h2>{children}</h2>,
+      [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
+      [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
+    },
+    renderMark: {},
+  }
+
   const helpWays = [
     {
       name: "Patrocinador",
       description:
-        "Puedes realizar un aporte economico a nuestra cuenta del banco agricola",
+        "Puedes realizar un aporte economico a la cuenta: 003400517134 del banco agricola ",
       icon: "FaHandHoldingHeart",
       size: 70,
     },
@@ -22,6 +56,32 @@ const helpus = () => {
   return (
     <Layout>
       <div className="helpContainer">
+        <p className="helpContainer__title">ILUMINA CON TU AYUDA A OTROS</p>
+        <p className="helpContainer__subtitle">
+          Tu tambien puede ayudar hoy mismo de las siguientes maneras:
+        </p>
+        <div>
+          {data.allContentfulHelp.nodes.map(help =>
+            documentToReactComponents(
+              help.childContentfulHelpDescriptionRichTextNode.json,
+              options
+            )
+          )}
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export default Helpus
+
+/*
+
+  return (
+    <Layout>
+      <div className="helpContainer">
+     
+
         <p className="helpContainer__title">ILUMINA CON TU AYUDA A OTROS</p>
         <p className="helpContainer__subtitle">
           Tu tambien puede ayudar hoy mismo de las siguientes maneras:
@@ -46,4 +106,4 @@ const helpus = () => {
   )
 }
 
-export default helpus
+*/
