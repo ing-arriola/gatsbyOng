@@ -136,6 +136,18 @@ h1 {
   }
 }
 
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -588,7 +600,7 @@ p {
 
 .helpway-content {
   font-weight: 200;
-  animation: moveFromBottom 1.3s cubic-bezier(0.73, 0.31, 0.46, 0.86);
+  animation: moveFromBottom 1s cubic-bezier(0.3, 1.55, 0.79, 1.23);
 }
 
 .helpway-content > p {
@@ -657,6 +669,7 @@ p {
   flex-direction: column;
   padding: 5rem 1rem;
   border-radius: 0.5rem;
+  animation: moveFromTop 1s cubic-bezier(0.3, 1.55, 0.79, 1.23);
 }
 
 .contact-description {
