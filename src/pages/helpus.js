@@ -83,16 +83,12 @@ const Helpus = () => {
           Tu tambien puede ayudar hoy mismo de las siguientes maneras:
         </p>
         <div className="helpway-content">
-          {helpContent.map(help => (
-            <div>
-              <div>
-                {documentToReactComponents(
-                  help.childContentfulHelpDescriptionRichTextNode.json,
-                  options
-                )}
-              </div>
-            </div>
-          ))}
+          {helpContent.map(help =>
+            documentToReactComponents(
+              help.childContentfulHelpDescriptionRichTextNode.json,
+              options
+            )
+          )}
         </div>
       </div>
     </Layout>
