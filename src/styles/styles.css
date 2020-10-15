@@ -419,7 +419,7 @@ p {
   height: 20rem;
 }
 
-.ong-data-Valores > span {
+.ong-data-Valores--content {
   display: grid;
   border: 1px solid #eee;
   border-radius: 2rem;
@@ -429,7 +429,7 @@ p {
   align-items: center;
 }
 
-.ong-data-Valores > span:hover {
+.ong-data-Valores--content:hover {
   background-color: rgba(56, 56, 56, 0.315);
   box-shadow: 0 0.5rem 0.8rem #ccc;
 }

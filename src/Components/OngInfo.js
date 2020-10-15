@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import * as FontAwesome from "react-icons/fa"
 
 const infoQuery = graphql`
   {
@@ -35,6 +36,13 @@ const OngInfo = () => {
   let prevText = sortedArray.filter(chunk => chunk.name === "Valores")
   let enteredText = prevText[0].description.description
   const valores = enteredText.split("\n")
+  /* Array for valores icons */
+  const icons = [
+    "FaHandsHelping",
+    "FaHandshake",
+    "FaLightbulb",
+    "FaRegThumbsUp",
+  ]
 
   return (
     <div>
@@ -61,7 +69,14 @@ const OngInfo = () => {
               className={"ong-data-" + info.name}
             >
               {info.name === "Valores" ? (
-                valores.map((valor, index) => <span key={index}>{valor}</span>)
+                valores.map((valor, index) => (
+                  <div className="ong-data-Valores--content">
+                    <div style={{ fontSize: 70 }}>
+                      {React.createElement(FontAwesome[icons[index]])}
+                    </div>
+                    <span key={index}>{valor}</span>
+                  </div>
+                ))
               ) : (
                 <p className="info-container--description">
                   {info.description.description}
