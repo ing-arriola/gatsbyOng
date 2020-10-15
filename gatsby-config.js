@@ -9,8 +9,8 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Gatsby Jaime Arriola Testsite",
-    description: "random description",
+    title: "Red de jovenes del futuro",
+    description: "Website ONG Red de jovenes del futuro",
     author: "Jaime Arriola",
     data: ["item-1", "item-2"],
     person: { name: "Gatsby", age: 25 },

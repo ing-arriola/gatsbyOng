@@ -558,6 +558,7 @@ p {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  padding-bottom: 5rem;
 }
 
 .helpContainer__title {
@@ -580,22 +581,50 @@ p {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-top: 3rem;
   text-align: center;
   text-decoration: underline;
 }
 
 .helpway-content {
   font-weight: 200;
-}
-
-.helpway-content > p > iframe {
-  margin-top: 2rem;
+  animation: moveFromBottom 1.3s cubic-bezier(0.73, 0.31, 0.46, 0.86);
 }
 
 .helpway-content > p {
   font-size: 2.3rem;
   padding: 0 8rem;
   text-align: justify;
+}
+
+.helpway-content > p > iframe {
+  text-align: center;
+}
+
+.helpway-content > ul {
+  padding-left: 10rem;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.embed-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 45%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.embed-video {
+  margin: 2rem auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 90%;
 }
 
 .help-section {

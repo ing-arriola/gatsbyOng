@@ -37,16 +37,20 @@ const Helpus = () => {
       ),
       [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
       [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
+
       [INLINES.HYPERLINK]: node => {
         return (
-          <iframe
-            width="560"
-            height="315"
-            src={node.data.uri}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div className="embed-video-container">
+            <iframe
+              width="560"
+              height="315"
+              src={node.data.uri}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className="embed-video"
+            ></iframe>
+          </div>
         )
       },
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
