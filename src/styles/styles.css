@@ -709,6 +709,13 @@ label {
   margin-top: 2.5rem;
 }
 
+/*Main footer*/
+
+.main-footer {
+  background:#fff);
+  color: #000;
+}
+
 /*
 .post-card:hover {
   transform: translateY(-1rem);
