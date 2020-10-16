@@ -32,7 +32,7 @@ body {
   /*clip-path: polygon(5% 0, 100% 0, 95% 100vh, 0 100%);*/
   background-attachment: fixed;
   position: relative;
-  margin-bottom: 10rem;
+
   border: rgb(117, 117, 117) 0.5px solid;
 }
 
@@ -712,8 +712,22 @@ label {
 /*Main footer*/
 
 .main-footer {
-  background:#fff);
-  color: #000;
+  background: #ccc;
+  color: #333;
+  height: 8rem;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.9rem;
+}
+
+.main-footer--social > svg {
+  margin: 0 1rem;
+}
+
+.social--whatsapp {
+  color: #24aa58;
 }
 
 /*

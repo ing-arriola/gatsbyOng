@@ -4,14 +4,19 @@ const Footer = () => {
   return (
     <footer className="main-footer">
       <div>
-        <p>Website builded by: Jaime Arriola</p>
+        <a href="google.com">Website builded by: Jaime Arriola</a>
+
         <p>Red de jóvenes del futuro &copy; </p>
       </div>
 
-      <div>
-        <FaFacebook size={40} />
+      <div className="main-footer--social">
+        <a href="google.com">
+          <FaFacebook size={40} />
+        </a>
         <FaRegEnvelope size={40} />
-        <FaWhatsapp size={40} />
+        <a href="google.com">
+          <FaWhatsapp size={40} className="social--whatsapp" />
+        </a>
       </div>
     </footer>
   )
