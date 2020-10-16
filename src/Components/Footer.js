@@ -1,24 +1,40 @@
 import React from "react"
 import { FaFacebook, FaRegEnvelope, FaWhatsapp } from "react-icons/fa"
+import { Link } from "gatsby"
 const Footer = () => {
   return (
     <footer className="main-footer">
       <div>
-        <a href="google.com" className="main-footer--link">
-          Website builded by: Jaime Arriola
+        <a
+          href="google.com"
+          className="main-footer--link"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Website developed by: Jaime Arriola
         </a>
 
         <p>Red de jóvenes del futuro 2020 &copy; </p>
       </div>
 
       <div className="main-footer--social">
-        <a href="https://www.facebook.com/Red-de-J%C3%B3venes-del-Futuro-101271765014839">
-          <FaFacebook size={40} className="main-footer--link" />
-        </a>
-        <FaRegEnvelope size={40} className="main-footer--link" />
-        <a href="google.com">
-          <FaWhatsapp size={40} className="main-footer--link" />
-        </a>
+        <div>
+          <a
+            href="https://www.facebook.com/Red-de-J%C3%B3venes-del-Futuro-101271765014839"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaFacebook size={40} className="main-footer--link" />
+          </a>
+        </div>
+        <div>
+          <Link to="/contactus/">
+            <FaRegEnvelope size={40} className="main-footer--link" />
+          </Link>
+        </div>
+        <div className="social__phone">
+          <FaWhatsapp size={40} /> +503 74366164
+        </div>
       </div>
     </footer>
   )
