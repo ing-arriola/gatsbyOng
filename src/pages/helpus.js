@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../Components/Layout"
-import * as FontAwesome from "react-icons/fa"
 
 export const helpQuery = graphql`
   {
@@ -100,36 +99,3 @@ const Helpus = () => {
 }
 
 export default Helpus
-
-/*
-
-  return (
-    <Layout>
-      <div className="helpContainer">
-     
-
-        <p className="helpContainer__title">ILUMINA CON TU AYUDA A OTROS</p>
-        <p className="helpContainer__subtitle">
-          Tu tambien puede ayudar hoy mismo de las siguientes maneras:
-        </p>
-        <div>
-          {helpWays.map(helpWay => (
-            <section className="help-section">
-              <div className="help-section--title">
-                {helpWay.name}
-                <div style={{ fontSize: helpWay.size }}>
-                  {React.createElement(FontAwesome[helpWay.icon])}
-                </div>
-              </div>
-              <div className="help-section--description">
-                {helpWay.description}
-              </div>
-            </section>
-          ))}
-        </div>
-      </div>
-    </Layout>
-  )
-}
-
-*/

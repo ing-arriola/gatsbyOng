@@ -20,6 +20,7 @@ const programTemplate = ({ data }) => {
           <img
             className="newsImages"
             src={`https:${node.data.target.fields.file["en-US"].url}`}
+            alt="help-program"
           ></img>
         </div>
       ),

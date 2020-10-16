@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import * as FontAwesome from "react-icons/fa"
 
 const infoQuery = graphql`
@@ -25,10 +25,11 @@ const OngInfo = () => {
 
   const orderToRender = ["Mision", "Vision", "Valores", "Politicas"]
   const sortedArray = []
+  let sortedItem
   for (let i = 0; i < orderToRender.length; i++) {
-    let sortedItem = (sortedItem = data.allContentfulRdf.nodes.filter(
+    sortedItem = sortedItem = data.allContentfulRdf.nodes.filter(
       item => item.name === orderToRender[i]
-    ))
+    )
     sortedArray.push(sortedItem[0])
   }
 

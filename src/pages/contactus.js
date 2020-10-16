@@ -13,7 +13,7 @@ const contactus = () => {
             <span>prensa.redejovenesdelfuturo@gmail.com</span> o llenando el
             siguiente formulario:{" "}
           </p>
-          <label>Nombre</label>
+          <label for="name">Nombre</label>
           <input
             type="text"
             placeholder="Nombre"
@@ -21,7 +21,7 @@ const contactus = () => {
             id="name"
             required
           ></input>
-          <label>Email</label>
+          <label for="email">Email</label>
           <input
             type="email"
             placeholder="Email"
@@ -29,7 +29,7 @@ const contactus = () => {
             id="email"
             required
           />
-          <label>Asunto</label>
+          <label for="subject">Asunto</label>
           <input
             type="text"
             placeholder="Asunto de tu mensaje"
@@ -37,7 +37,7 @@ const contactus = () => {
             id="subject"
             required
           />
-          <label>Mensaje</label>
+          <label for="message">Mensaje</label>
           <textarea
             name="message"
             id="message"
