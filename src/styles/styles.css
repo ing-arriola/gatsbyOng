@@ -32,8 +32,6 @@ body {
   /*clip-path: polygon(5% 0, 100% 0, 95% 100vh, 0 100%);*/
   background-attachment: fixed;
   position: relative;
-
-  border: rgb(117, 117, 117) 0.5px solid;
 }
 
 h1 {
@@ -712,9 +710,9 @@ label {
 /*Main footer*/
 
 .main-footer {
-  background: #ccc;
-  color: #333;
-  height: 8rem;
+  background: #171823e7;
+  color: #ccc;
+  height: 10rem;
   padding: 0 5rem;
   display: flex;
   justify-content: space-between;
@@ -723,11 +721,16 @@ label {
 }
 
 .main-footer--social > svg {
-  margin: 0 1rem;
+  margin: 0 2.5rem;
 }
 
-.social--whatsapp {
-  color: #24aa58;
+.main-footer--link {
+  color: #ccc;
+}
+
+.main-footer--link:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.3);
 }
 
 /*
