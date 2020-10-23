@@ -8,11 +8,13 @@ const contactus = () => {
           <div className="page-title">
             <p>CONTACTANOS</p>
           </div>
-          <p className="contact-description">
-            Sera un gusto atenderte, permitenos saber de ti escribiendonos a{" "}
-            <span>prensa.redejovenesdelfuturo@gmail.com</span> o llenando el
-            siguiente formulario:{" "}
-          </p>
+          <div className="contact-form__description">
+            <p className="contact-description">
+              Sera un gusto atenderte, permitenos saber de ti escribiendonos
+              llenando el siguiente formulario:{" "}
+            </p>
+          </div>
+
           <label for="name">Nombre</label>
           <input
             type="text"

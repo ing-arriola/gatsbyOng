@@ -244,8 +244,8 @@ h1 {
 }
 .navigation__button {
   background: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   position: fixed;
   top: 6rem;
   right: 6rem;
@@ -257,13 +257,13 @@ h1 {
 }
 @media (max-width: 56.25em) {
   .navigation__button {
-    top: 3rem;
-    right: 3rem;
+    top: 1.5rem;
+    right: 1.5rem;
   }
 }
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
@@ -275,8 +275,8 @@ h1 {
 }
 @media (max-width: 56.25em) {
   .navigation__background {
-    top: 3.5rem;
-    right: 3.5rem;
+    top: 2rem;
+    right: 2rem;
   }
 }
 .navigation__nav {
@@ -344,7 +344,7 @@ h1 {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 2.6rem;
 }
 .navigation__icon,
 .navigation__icon::before,
@@ -533,7 +533,7 @@ p {
 }
 
 .info-container--title {
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 5vw, 4rem);
   line-height: 1.6;
   margin: 1rem;
   text-transform: uppercase;
@@ -551,7 +551,7 @@ p {
 .ong-data-Vision,
 .ong-data-Politicas {
   text-align: justify;
-  font-size: 2.5rem;
+  font-size: clamp(1.3rem, 1.5vw, 2.5rem);
   font-weight: 500;
 }
 
@@ -616,7 +616,7 @@ p {
 
 .page-title {
   color: #fff;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;
 }
 
@@ -724,7 +724,7 @@ p {
 
 .helpContainer__title {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .helpContainer__subtitle {
@@ -824,6 +824,8 @@ p {
 .contact-description {
   padding: 0 5rem;
   text-align: center;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  hyphens: auto;
 }
 
 .contact-form > input,
@@ -909,12 +911,28 @@ label {
     visibility: hidden;
   }
 
-  /*about*/
-  .ong-data-Mision,
-  .ong-data-Vision,
-  .ong-data-Politicas,
-  .ong-data-Valores {
-    font-size: 1.8rem;
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+
+    padding: 0.5rem 2rem;
+  }
+  #Politicas {
+    height: 135vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-container {
+    padding: 0 7rem;
+  }
+
+  #Politicas {
+    padding: 0 7rem;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
 
