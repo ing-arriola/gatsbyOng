@@ -15,29 +15,34 @@ const NavBurger = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="/" className="navigation__link">
               {" "}
-              <span>01</span> About Natours
+              INICIO
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
-              <span>02</span>Your benefits
+            <a href="/about/" className="navigation__link">
+              NOSOTROS
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
-              <span>03</span>Popular tours
+            <a href="/programs/" className="navigation__link">
+              PROGRAMAS
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
-              <span>04</span>Stories
+            <a href="/news/" className="navigation__link">
+              NOTICIAS
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
-              <span>05</span>Book now
+            <a href="/helpus/" className="navigation__link">
+              COLABORA
+            </a>
+          </li>
+          <li className="navigation__item">
+            <a href="/contactus/" className="navigation__link">
+              CONTACTO
             </a>
           </li>
         </ul>

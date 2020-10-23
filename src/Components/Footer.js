@@ -24,16 +24,16 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FaFacebook size={40} className="main-footer--link" />
+            <FaFacebook size={28} className="main-footer--link" />
           </a>
         </div>
         <div>
           <Link to="/contactus/">
-            <FaRegEnvelope size={40} className="main-footer--link" />
+            <FaRegEnvelope size={28} className="main-footer--link" />
           </Link>
         </div>
         <div className="social__phone">
-          <FaWhatsapp size={40} /> +503 74366164
+          <FaWhatsapp size={28} /> +503 74366164
         </div>
       </div>
     </footer>
