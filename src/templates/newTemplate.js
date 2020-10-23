@@ -29,10 +29,12 @@ const newTemplate = ({ data }) => {
     <Layout color="black">
       <div className="post-container">
         <Link to="/news">Regresar a noticias</Link>
-        {documentToReactComponents(
-          firstContent.childContentfulNewsTextoRichTextNode.json,
-          options
-        )}
+        <div className="article-text">
+          {documentToReactComponents(
+            firstContent.childContentfulNewsTextoRichTextNode.json,
+            options
+          )}
+        </div>
       </div>
     </Layout>
   )

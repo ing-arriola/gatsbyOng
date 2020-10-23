@@ -234,12 +234,6 @@ h1 {
   background: #343e52;
 }
 
-.navigation-items li:hover .underline {
-  width: 90%;
-  height: 0.2rem;
-  margin: 0 0.5rem;
-}
-
 .toolbar {
   height: 6rem;
   width: 100%;
@@ -660,7 +654,7 @@ p {
 .contact-form {
   margin: 2rem auto;
 
-  width: 70%;
+  width: 80%;
   background: rgba(0, 0, 0, 0.507);
   color: #fff;
   display: flex;
@@ -718,6 +712,8 @@ label {
   justify-content: space-between;
   align-items: center;
   font-size: 1.9rem;
+  position: absolute;
+  width: 100%;
 }
 
 .main-footer--social {
