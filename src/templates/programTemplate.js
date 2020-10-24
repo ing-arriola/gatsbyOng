@@ -31,7 +31,6 @@ const programTemplate = ({ data }) => {
     <div>
       <Layout color="black">
         <div className="post-container">
-          <Link to="/programs">Regresar a programas</Link>
           <div className="article-text">
             {documentToReactComponents(
               programContent.childContentfulOngProgramsTextoRichTextNode.json,

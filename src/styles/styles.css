@@ -196,7 +196,7 @@ h1 {
   color: #fff;
   margin: 0 1.1rem;
 
-  font-size: clamp(1.3rem, 1.5vw, 2.5rem);
+  font-size: clamp(1.1rem, 1.3vw, 2.5rem);
   padding: 1.1rem 1.6rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -244,7 +244,7 @@ h1 {
   display: none;
 }
 .navigation__button {
-  background: #fff;
+  background: #282a3de7;
   height: 5rem;
   width: 5rem;
   position: fixed;
@@ -252,14 +252,14 @@ h1 {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer;
 }
 @media (max-width: 56.25em) {
   .navigation__button {
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1.3rem;
+    right: 1.3rem;
   }
 }
 .navigation__background {
@@ -269,15 +269,15 @@ h1 {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#343e52, #7384a1);
+  background-image: radial-gradient(#202a3d, #a4c6ff);
 
   z-index: 1000;
   transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
 }
 @media (max-width: 56.25em) {
   .navigation__background {
-    top: 2rem;
-    right: 2rem;
+    top: 1.7rem;
+    right: 1.7rem;
   }
 }
 .navigation__nav {
@@ -352,7 +352,7 @@ h1 {
 .navigation__icon::after {
   width: 3rem;
   height: 2px;
-  background: #333;
+  background: #fff;
   display: inline-block;
 }
 .navigation__icon::before,
@@ -578,6 +578,10 @@ p {
   align-items: center;
 }
 
+.valores-icons {
+  font-size: clamp(2.8rem, 4vw, 5rem);
+}
+
 .ong-data-Valores--content:hover {
   background-color: rgba(56, 56, 56, 0.315);
   box-shadow: 0 0.5rem 0.8rem #ccc;
@@ -592,6 +596,7 @@ p {
   background-size: cover;
   padding: 5rem 0;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .newsImages {
@@ -609,6 +614,7 @@ p {
   margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  justify-content: center;
   gap: 8rem;
   padding: 0px 3rem 3rem 3rem;
   transition: all 0.5s ease-in-out;
@@ -682,8 +688,12 @@ p {
 }
 
 .article-text {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: 500;
+}
+
+.article-text h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
 }
 
 .article-text > p {
@@ -691,6 +701,7 @@ p {
 }
 
 .article-text > h2 {
+  font-size: clamp(2.5rem, 3.5vw, 4rem);
   margin: 4rem 3rem 0 3rem;
 }
 
@@ -710,7 +721,7 @@ p {
 .helpContainer {
   padding-top: 5rem;
 
-  width: 100vw;
+  width: 100%;
   color: #fff;
   margin: 0 auto auto 0;
   font-size: 2rem;
@@ -859,7 +870,7 @@ label {
 }
 
 .post-container {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 
 /*Main footer*/
@@ -935,12 +946,34 @@ label {
   #Politicas {
     height: 135vh;
   }
+  .posts-container {
+    grid-template-columns: repeat(auto-fill, minmax(358px, 40rem));
+  }
+  .post-card__read-more {
+    display: grid;
+    align-items: center;
+
+    color: #000;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    z-index: 0;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .helpway-content > p {
+    padding: 0 3.5rem;
+  }
+
   .footer-logo img {
     height: 5rem;
     width: auto;
+    margin-top: 1rem;
   }
 }
 
@@ -959,19 +992,32 @@ label {
 }
 
 @media screen and (max-width: 550px) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .navigation__background {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .navigation__icon {
+    margin-top: 2.1rem;
+  }
   .main-footer {
     flex-direction: column;
     height: 15rem;
   }
 
   .main-footer--text {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   .main-footer--social {
     margin-bottom: 1.5rem;
   }
-  #Valores {
-    height: 125vh;
+
+  .posts-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 40rem));
   }
 }
 

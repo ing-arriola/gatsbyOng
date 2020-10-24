@@ -72,7 +72,7 @@ const OngInfo = () => {
               {info.name === "Valores" ? (
                 valores.map((valor, index) => (
                   <div className="ong-data-Valores--content">
-                    <div style={{ fontSize: 60 }}>
+                    <div className="valores-icons">
                       {React.createElement(FontAwesome[icons[index]])}
                     </div>
                     <span key={index}>{valor}</span>
