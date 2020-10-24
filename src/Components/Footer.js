@@ -1,10 +1,15 @@
 import React from "react"
 import { FaFacebook, FaRegEnvelope, FaWhatsapp } from "react-icons/fa"
 import { Link } from "gatsby"
+import Logo from "../images/LogRJF.png"
 const Footer = () => {
   return (
     <footer className="main-footer">
-      <div>
+      <div className="footer-logo">
+        <img src={Logo} alt="Red de JF" />
+      </div>
+
+      <div className="main-footer--text">
         <a
           href="google.com"
           className="main-footer--link"
@@ -24,16 +29,16 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FaFacebook size={28} className="main-footer--link" />
+            <FaFacebook className="main-footer--link logo-size" />
           </a>
         </div>
         <div>
           <Link to="/contactus/">
-            <FaRegEnvelope size={28} className="main-footer--link" />
+            <FaRegEnvelope className="main-footer--link logo-size " />
           </Link>
         </div>
         <div className="social__phone">
-          <FaWhatsapp size={28} /> +503 74366164
+          <FaWhatsapp className="logo-size" /> +503 74366164
         </div>
       </div>
     </footer>
