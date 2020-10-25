@@ -10,8 +10,8 @@ const contactus = () => {
           </div>
           <div className="contact-form__description">
             <p className="contact-description">
-              Sera un gusto atenderte, permitenos saber de ti escribiendonos
-              llenando el siguiente formulario:{" "}
+              Sera un gusto atenderte, permitenos saber de ti llenando el
+              siguiente formulario:{" "}
             </p>
           </div>
 

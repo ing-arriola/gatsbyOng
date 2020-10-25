@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700;800&display=swap");*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 
 html {
@@ -15,8 +12,7 @@ html {
 
 body {
   font-family: "Lora", serif;
-  /*font-family: "Bitter", serif;
-  font-family: "Piazzolla", serif;*/
+
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -29,7 +25,7 @@ body {
     url(../images/frontPage.jpg);
   background-size: cover;
   background-position: top;
-  /*clip-path: polygon(5% 0, 100% 0, 95% 100vh, 0 100%);*/
+
   background-attachment: fixed;
   position: relative;
 }
@@ -949,19 +945,36 @@ label {
   .posts-container {
     grid-template-columns: repeat(auto-fill, minmax(358px, 40rem));
   }
+
+  .post-card {
+    height: auto;
+    position: unset;
+  }
+
   .post-card__read-more {
-    display: grid;
-    align-items: center;
+    transition: none;
 
-    color: #000;
+    color: rgb(41, 37, 37);
 
-    position: absolute;
+    position: unset;
+    top: unset;
+    left: 0;
     bottom: 0;
-    right: 0;
-
+    height: 10%;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     opacity: 1;
+  }
+
+  .post-card__read-more > a {
+    text-decoration: none;
+    border-radius: 2rem;
+    background: rgba(119, 119, 119, 0.644);
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: inherit;
   }
 }
 

@@ -10,16 +10,15 @@ const Footer = () => {
       </div>
 
       <div className="main-footer--text">
+        <p>Red de jóvenes del futuro 2020 &copy; </p>
         <a
-          href="google.com"
+          href="https://jaime-arriola.netlify.app/"
           className="main-footer--link"
           target="_blank"
           rel="noreferrer noopener"
         >
           Website developed by: Jaime Arriola
         </a>
-
-        <p>Red de jóvenes del futuro 2020 &copy; </p>
       </div>
 
       <div className="main-footer--social">
