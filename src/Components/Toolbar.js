@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Logo from "../images/LogRJF.png"
 
@@ -13,7 +13,11 @@ const Toolbar = item => {
     }
   }
   console.log(item.item)
-  window.addEventListener("scroll", changeNavbarBackground)
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbarBackground)
+  })
+
   return (
     <nav className={navBackground === true ? "toolbar active " : "toolbar"}>
       <div className="logo">
