@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../Components/Layout"
@@ -18,6 +18,7 @@ const newTemplate = ({ data }) => {
           <img
             className="newsImages"
             src={`https:${node.data.target.fields.file["en-US"].url}`}
+            alt="asset"
           ></img>
         </div>
       ),

@@ -22,9 +22,9 @@ export const helpQuery = graphql`
 const Helpus = () => {
   const data = useStaticQuery(helpQuery)
   //console.log(data)
-  data.allContentfulHelp.nodes.map(help => {
+  /*data.allContentfulHelp.nodes.map(help => {
     console.log(help.icon)
-  })
+  })*/
 
   const helpContent = data.allContentfulHelp.nodes
 
@@ -41,6 +41,7 @@ const Helpus = () => {
         return (
           <div className="embed-video-container">
             <iframe
+              title="video"
               width="560"
               height="315"
               src={node.data.uri}
@@ -54,29 +55,15 @@ const Helpus = () => {
       },
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <div className="newsImages-container">
-          <img src={`https:${node.data.target.fields.file["en-US"].url}`}></img>
+          <img
+            src={`https:${node.data.target.fields.file["en-US"].url}`}
+            alt="article-asset"
+          ></img>
         </div>
       ),
     },
     renderMark: {},
   }
-
-  const helpWays = [
-    {
-      name: "Patrocinador",
-      description:
-        "Puedes realizar un aporte economico a la cuenta: 003400517134 del banco agricola ",
-      icon: "FaHandHoldingHeart",
-      size: 70,
-    },
-    {
-      name: "Voluntario",
-      description:
-        "Puedes ayudar con tu tiempo colaborando en nuestros programas de apoyo a la comunidad",
-      icon: "FaHandPaper",
-      size: 70,
-    },
-  ]
 
   return (
     <Layout>

@@ -1,19 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import Logo from "../images/LogRJF.png"
 
 const Toolbar_articles = () => {
-  const [navBackground, setNavBackground] = useState(false)
-
-  const changeNavbarBackground = () => {
-    if (window.scrollY >= 10) {
-      setNavBackground(true)
-    } else {
-      setNavBackground(false)
-    }
-  }
-
-  window.addEventListener("scroll", changeNavbarBackground)
   return (
     <nav className="toolbar_posts">
       <div className="logo">
