@@ -254,8 +254,8 @@ h1 {
 }
 @media (max-width: 56.25em) {
   .navigation__button {
-    top: 1.3rem;
-    right: 1.3rem;
+    top: 1.5rem;
+    right: 1.5rem;
   }
 }
 .navigation__background {
@@ -272,8 +272,8 @@ h1 {
 }
 @media (max-width: 56.25em) {
   .navigation__background {
-    top: 1.7rem;
-    right: 1.7rem;
+    top: 1.9rem;
+    right: 1.9rem;
   }
 }
 .navigation__nav {
@@ -689,7 +689,8 @@ p {
 }
 
 .article-text h1 {
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin: 5rem 8rem 0 8rem;
+  font-size: clamp(2.3rem, 3vw, 3rem);
 }
 
 .article-text > p {
