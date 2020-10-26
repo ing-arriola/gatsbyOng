@@ -4,7 +4,13 @@ const contactus = () => {
   return (
     <Layout>
       <div className="form-container">
-        <form className="contact-form">
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          className="contact-form"
+        >
           <div className="page-title">
             <p>CONTACTANOS</p>
           </div>
