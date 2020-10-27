@@ -6,11 +6,14 @@ const contactus = () => {
       <div className="form-container">
         <form
           name="contact"
-          method="post"
+          action="/contactus"
+          method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          netlify
           className="contact-form"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div className="page-title">
             <p>CONTACTANOS</p>
           </div>
