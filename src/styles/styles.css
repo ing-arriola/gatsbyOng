@@ -496,6 +496,13 @@ p {
   line-height: 1.6;
   margin: 1rem;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.centrado {
+  text-align: center;
 }
 
 .info-container--description {
@@ -578,6 +585,7 @@ p {
   color: #000;
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;
+  margin-top: 2rem;
 }
 
 .post-card {
@@ -759,22 +767,22 @@ p {
 
 .form-container {
   margin-top: 5rem;
-  width: 100vw;
+  width: 100%;
 
   margin: 0 auto auto 0;
   font-size: 2rem;
-  background-image: linear-gradient(to right bottom, #454855b4, #454855e5),
-    url(../images/contact.jpg);
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+
   padding: 5rem;
+}
+
+.contact-image {
+  height: 20rem;
 }
 
 .contact-form {
   margin: 2rem auto;
 
-  width: 80%;
+  width: 70%;
   background: rgba(0, 0, 0, 0.507);
   color: #fff;
   display: flex;
@@ -914,6 +922,7 @@ label {
   display: flex;
   min-height: 100vh;
   padding-top: 5rem;
+  animation: moveFromBottom 1s cubic-bezier(0.3, 1.55, 0.79, 1.23);
 }
 
 .image-sections {
@@ -1019,6 +1028,9 @@ label {
     width: 100%;
   }
   .image-sections {
+    width: 30rem;
+  }
+  .newsImages-container > img {
     width: 30rem;
   }
 }

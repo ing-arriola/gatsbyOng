@@ -1,9 +1,15 @@
 import React from "react"
 import Layout from "../Components/Layout"
+import contactImage from "../images/contact.svg"
+
 const contactus = () => {
   return (
     <Layout>
       <div className="form-container">
+        <div className="page-title">
+          <p>CONTACTANOS</p>
+          <img src={contactImage} className="contact-image"></img>
+        </div>
         <form
           name="contact"
           method="POST"
@@ -13,9 +19,7 @@ const contactus = () => {
           className="contact-form"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div className="page-title">
-            <p>CONTACTANOS</p>
-          </div>
+
           <div className="contact-form__description">
             <p className="contact-description">
               Sera un gusto atenderte, permitenos saber de ti llenando el
@@ -51,7 +55,7 @@ const contactus = () => {
           <textarea
             name="message"
             id="message"
-            placeholder="Escriben tu mensaje aqui, sera un gusto leerlo :)"
+            placeholder="Escriben tu mensaje aqui, sera un gusto saber de ti :)"
             cols="30"
             rows="10"
             required

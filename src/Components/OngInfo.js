@@ -57,15 +57,12 @@ const OngInfo = () => {
     <div className="generic-section">
       {sortedArray.map((info, index) => (
         <article key={info.id} className="generic-inner row">
+          <p className="info-container--title">{info.name}</p>
           <div className="column image-align ">
             <img className="image-sections" src={images[index]} />
           </div>
 
           <div className="column">
-            <div className="info-container--title">
-              <p>{info.name}</p>
-            </div>
-
             <div>
               <div className={"ong-data-" + info.name}>
                 {info.name === "Valores" ? (
