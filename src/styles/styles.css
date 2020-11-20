@@ -16,7 +16,7 @@ body {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: rgb(41, 41, 41);
+  color: #000;
 }
 
 .header {
@@ -402,7 +402,7 @@ h1 {
   z-index: 20000;
   /*background: #677693c2;*/
   /*background: #343e52d7;*/
-  background: transparent;
+  background: rgba(0, 0, 0, 0.418);
 }
 
 .toolbar_posts {
@@ -438,7 +438,6 @@ p {
   white-space: pre-wrap;
 }
 
-/* ONG INFO CONTAINER */
 .about-container {
   margin: 0;
   height: 100vh;
@@ -487,45 +486,11 @@ p {
   padding: 0 10rem;
 }
 
-#Mision {
-  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
-    url(../images/About/mision.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-#Vision {
-  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
-    url(../images/About/vision.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#Valores {
-  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
-    url(../images/About/valores.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#Politicas {
-  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
-    url(../images/About/politicas.jpg);
-
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 150vh;
-  color: #fff;
-
-  text-align: center;
-  padding: 12rem 10rem;
-}
-
 .page a {
   text-decoration: none;
 }
 
+/*ONG DATA STYLES*/
 .info-container--title {
   font-size: clamp(1.5rem, 5vw, 4rem);
   line-height: 1.6;
@@ -533,12 +498,9 @@ p {
   text-transform: uppercase;
 }
 
-.info-container--ong-data {
-  line-height: 1.6;
-}
-
 .info-container--description {
   font-weight: 300;
+  line-height: 1.6;
 }
 
 .ong-data-Mision,
@@ -558,10 +520,6 @@ p {
   font-weight: 500;
 
   font-size: clamp(1.3rem, 1.7vw, 2.5rem);
-}
-
-.ong-data-Politicas {
-  height: 20rem;
 }
 
 .ong-data-Valores--content {
@@ -586,11 +544,7 @@ p {
 /* STyles for Image on a new */
 
 .news-container {
-  background-image: linear-gradient(to right bottom, #2424248f, #000000b2),
-    url(../images/news.jpg);
-
-  background-size: cover;
-  padding: 5rem 0;
+  padding: 10rem 0;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -606,10 +560,13 @@ p {
   align-items: center;
 }
 
+.newsImages-container > img {
+  height: 30rem;
+}
+
 .posts-container {
   margin: 3rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  display: flex;
   justify-content: center;
   gap: 8rem;
   padding: 0px 3rem 3rem 3rem;
@@ -617,7 +574,7 @@ p {
 }
 
 .page-title {
-  color: #fff;
+  color: #000;
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;
 }
@@ -626,7 +583,8 @@ p {
   border: 1px solid #eee;
   border-radius: 2rem;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(161, 161, 161, 0.877);
-  height: 26.3rem;
+
+  width: 50rem;
   position: relative;
   background: rgba(255, 255, 255, 0.925);
   overflow: hidden;
@@ -704,26 +662,20 @@ p {
 
 /*PROGRAM*/
 .progrmas-container {
-  background-image: linear-gradient(to right bottom, #4548557a, #454855c7),
-    url(../images/programs.jpg);
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  height: 100vh;
-  padding: 5rem 1rem;
+  min-height: 100vh;
+  padding: 8rem 1rem;
 }
 
 /*HELP US*/
 
 .helpContainer {
-  padding-top: 5rem;
+  padding-top: 8rem;
 
   width: 100%;
-  color: #fff;
+  color: #000;
   margin: 0 auto auto 0;
   font-size: 2rem;
-  background-image: linear-gradient(to right bottom, #454855b4, #454855e5),
-    url(../images/helpus.jpg);
+
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -882,7 +834,7 @@ label {
   align-items: center;
 
   font-size: clamp(1rem, 1.2vw, 1.9rem);
-  position: absolute;
+
   width: 100%;
 }
 
@@ -954,6 +906,36 @@ label {
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
 }
+
+/*NEW ONE BUT STILL NEEDS TO FIGURE OUT HOW TO STRUCTURE THIS*/
+
+.generic-inner {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.image-sections {
+  width: 50rem;
+}
+
+.image-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+  padding: 20px;
+}
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 900px) {
   .navigation {
