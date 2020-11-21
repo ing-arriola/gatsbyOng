@@ -978,17 +978,16 @@ label {
 
   .post-card__read-more {
     transition: none;
-
     color: rgb(41, 37, 37);
-
     position: unset;
     top: unset;
     left: 0;
     bottom: 0;
-    height: 10%;
+
     width: 100%;
     z-index: 1;
     opacity: 1;
+    height: 5rem !important;
   }
 
   .post-card__read-more > a {

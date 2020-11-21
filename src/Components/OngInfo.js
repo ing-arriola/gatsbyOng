@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+
 import { graphql, useStaticQuery } from "gatsby"
 import * as FontAwesome from "react-icons/fa"
 
